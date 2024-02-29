@@ -64,7 +64,6 @@ browserMenu = {
     {"Firefox","firefox"},
     { "OperaGx","opera"},
 }
-
 schoolMenu = {
     {"Office","libreoffice"},
     {"Mathematica","mathematica"},
@@ -78,8 +77,8 @@ thingsMenu ={
 mymainmenu = awful.menu(
                         {   auto_expand = true,
                             items = {   { "Awesome", myawesomemenu, beautiful.awesome_icon },
-                                        { "Alacritty", terminal, "~/.config/awesome/sky/icons/AlacrittyIcon.jpg"},
-                                        { "Browsers",browserMenu}, 
+                                        { "Alacritty", terminal, beautiful.terminalIcon },
+                                        { "Browsers",browserMenu,beautiful.browserIcon}, 
                                         { "Fun",thingsMenu},
                                         { "School",schoolMenu},
                                     },
