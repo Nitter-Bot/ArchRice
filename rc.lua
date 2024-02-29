@@ -60,15 +60,28 @@ myawesomemenu = {
    { "quit", function() awesome.quit() end },
 }
 
+browserMenu = {
+    {"Firefox","firefox"},
+    { "OperaGx","opera"},
+}
+
+schoolMenu = {
+    {"Office","libreoffice"},
+    {"Mathematica","mathematica"},
+}
+
+thingsMenu ={
+    {"Discord","discord"},
+    {"Spotify","spotify"},
+}
+
 mymainmenu = awful.menu(
                         {   auto_expand = true,
                             items = {   { "Awesome", myawesomemenu, beautiful.awesome_icon },
                                         { "Alacritty", terminal, "~/.config/awesome/sky/icons/AlacrittyIcon.jpg"},
-                                        { "Firefox","firefox"},
-                                        { "Opera","opera"},
-                                        { "Spotify","spotify-launcher"},
-                                        { "Discord","discord"},
-                                        { "Office","libreoffice"}
+                                        { "Browsers",browserMenu}, 
+                                        { "Fun",thingsMenu},
+                                        { "School",schoolMenu},
                                     },
                             theme = {   width = 150,
                                         height = 30,
